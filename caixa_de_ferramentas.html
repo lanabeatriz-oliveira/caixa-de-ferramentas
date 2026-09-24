@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caixa de Ferramentas - Comunidade</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bone: '#F6F2EC',
+                        bloco: '#EFE9DE',
+                        tinta: '#201C18',
+                        pedra: '#6E6559',
+                        fio: '#DBD3C2',
+                        azul: '#2B54D4',
+                        'azul-profundo': '#1B2E6B',
+                        'azul-suave': '#E7EBFA',
+                        ameixa: '#8A2F52',
+                        'ameixa-suave': '#F3E9EC'
+                    },
+                    fontFamily: {
+                        fraunces: ['Fraunces', 'serif'],
+                        figtree: ['Figtree', 'sans-serif'],
+                        jetbrains: ['"JetBrains Mono"', 'monospace']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-bone text-tinta font-figtree antialiased selection:bg-ameixa-suave selection:text-ameixa min-h-screen flex flex-col">
+
+    <header class="max-w-5xl mx-auto w-full px-6 pt-12 md:pt-20 pb-16">
+        <!-- Selo lb. -->
+        <div class="mb-12">
+            <div class="inline-flex items-center justify-center w-12 h-12 rounded-full border border-fio font-jetbrains text-lg font-medium text-tinta bg-bone shadow-sm">
+                lb.
+            </div>
+        </div>
+        
+        <div>
+            <span class="text-ameixa font-jetbrains text-sm font-bold tracking-widest uppercase mb-4 block">
+                Comunidade
+            </span>
+            <h1 class="font-fraunces text-4xl md:text-5xl lg:text-6xl text-tinta mb-6 leading-tight tracking-tight">
+                Caixa de ferramentas
+            </h1>
+            <p class="text-lg md:text-xl text-pedra max-w-2xl leading-relaxed">
+                Reuni aqui prompts e ideias que testei de verdade. Nada de listas prontas e genéricas de dicas: esse é um espaço vivo que vai crescer e evoluir conforme a nossa comunidade testar coisas novas juntos.
+            </p>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto w-full px-6 flex-grow flex flex-col gap-24 pb-24">
+        
+        <!-- Seção: O que já testei -->
+        <section>
+            <h2 class="font-fraunces text-3xl text-tinta mb-10 flex items-center gap-4">
+                O que já testei
+                <span class="block w-12 h-px bg-fio"></span>
+            </h2>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                
+                <!-- Card 1 -->
+                <article class="bg-bloco rounded-[2rem] p-8 md:p-10 flex flex-col border border-transparent hover:border-fio transition-colors duration-300">
+                    <div class="mb-6">
+                        <span class="inline-block bg-ameixa-suave text-ameixa font-jetbrains text-xs font-bold px-3 py-1.5 rounded-md uppercase tracking-wide">
+                            Priorização
+                        </span>
+                    </div>
+                    
+                    <h3 class="font-fraunces text-2xl text-tinta mb-4 leading-snug">
+                        Matriz GUT pra decidir o que vem primeiro
+                    </h3>
+                    
+                    <p class="text-pedra mb-8 leading-relaxed text-sm md:text-base">
+                        Eu sempre achei que tudo era urgente e tudo tinha que ser resolvido agora. Resultado: travava, sem saber por onde começar. Isso troca a sensação por uma nota.
+                    </p>
+                    
+                    <div class="bg-azul-profundo text-azul-suave rounded-2xl p-6 flex-grow flex flex-col relative overflow-hidden group">
+                        <!-- Detalhe decorativo em Azul Acento -->
+                        <div class="absolute top-0 left-0 w-full h-1 bg-azul opacity-80"></div>
+                        
+                        <div class="font-jetbrains text-[10px] uppercase tracking-widest text-azul-suave opacity-60 mb-4 font-bold flex items-center justify-between">
+                            <span>Prompt</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256" class="opacity-0 group-hover:opacity-100 transition-opacity cursor-pointer hover:text-white" title="Pressione Ctrl+C para copiar" onclick="navigator.clipboard.writeText(this.parentElement.nextElementSibling.innerText);"><path d="M216,32H88a8,8,0,0,0-8,8V80H40a8,8,0,0,0-8,8V216a8,8,0,0,0,8,8H168a8,8,0,0,0,8-8V176h40a8,8,0,0,0,8-8V40A8,8,0,0,0,216,32ZM160,208H48V96H160Zm48-48H176V88a8,8,0,0,0-8-8H96V48H208Z"></path></svg>
+                        </div>
+                        
+                        <p class="font-jetbrains text-sm leading-relaxed whitespace-pre-wrap">Quero priorizar as minhas demandas da semana usando a Matriz GUT (Gravidade, Urgência e Tendência). Vou te passar a lista de tudo o que preciso fazer, com o prazo quando eu souber. Antes de dar qualquer nota, faça até 3 perguntas para completar apenas o que for necessário, como prazos, o peso real de cada item e quanto tempo eu tenho disponível.
+
+Depois:
+1. Dê uma nota de 1 a 5 para cada item em Gravidade, Urgência e Tendência, explicando cada nota em uma frase curta.
+2. Multiplique Gravidade x Urgência x Tendência e organize tudo em uma tabela, do maior para o menor resultado.
+3. Se dois itens ficarem muito próximos, mostre o empate e me pergunte qual eu prefiro, sem decidir por mim.
+4. Para o item de maior nota, quebre em passos curtos de até 30 minutos cada e diga qual é o primeiro. Não invente prazos nem tarefas que eu não citei.
+
+Minha lista: [cole aqui tudo o que está na sua cabeça]</p>
+                    </div>
+                </article>
+
+                <!-- Card 2 -->
+                <article class="bg-bloco rounded-[2rem] p-8 md:p-10 flex flex-col border border-transparent hover:border-fio transition-colors duration-300">
+                    <div class="mb-6">
+                        <span class="inline-block bg-ameixa-suave text-ameixa font-jetbrains text-xs font-bold px-3 py-1.5 rounded-md uppercase tracking-wide">
+                            Modo de Voz
+                        </span>
+                    </div>
+                    
+                    <h3 class="font-fraunces text-2xl text-tinta mb-4 leading-snug">
+                        Fale com a IA em vez de digitar
+                    </h3>
+                    
+                    <p class="text-pedra mb-8 leading-relaxed text-sm md:text-base">
+                        Uma dica da Masterclass com o Otávio Pompeu que eu já uso de verdade. Economiza o tempo que eu gastaria digitando, me faz lembrar de mais coisas enquanto eu falo, e a IA capta tudo, até quando eu falo de um jeito enrolado.
+                    </p>
+                    
+                    <div class="bg-azul-profundo text-azul-suave rounded-2xl p-6 flex-grow flex flex-col relative overflow-hidden group">
+                        <!-- Detalhe decorativo em Azul Acento -->
+                        <div class="absolute top-0 left-0 w-full h-1 bg-azul opacity-80"></div>
+                        
+                        <div class="font-jetbrains text-[10px] uppercase tracking-widest text-azul-suave opacity-60 mb-4 font-bold flex items-center justify-between">
+                            <span>Prompt</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256" class="opacity-0 group-hover:opacity-100 transition-opacity cursor-pointer hover:text-white" title="Pressione Ctrl+C para copiar" onclick="navigator.clipboard.writeText(this.parentElement.nextElementSibling.innerText);"><path d="M216,32H88a8,8,0,0,0-8,8V80H40a8,8,0,0,0-8,8V216a8,8,0,0,0,8,8H168a8,8,0,0,0,8-8V176h40a8,8,0,0,0,8-8V40A8,8,0,0,0,216,32ZM160,208H48V96H160Zm48-48H176V88a8,8,0,0,0-8-8H96V48H208Z"></path></svg>
+                        </div>
+                        
+                        <p class="font-jetbrains text-sm leading-relaxed whitespace-pre-wrap">Quero pensar em voz alta sobre [assunto]. Vou falar de forma solta, como se estivesse explicando para um amigo, e vou dar o máximo de contexto que eu tiver.
+
+Enquanto eu falo, não organize, não resuma e não sugira soluções ainda. Quando eu disser terminei, me devolva:
+1. o que você entendeu, em poucas linhas;
+2. três perguntas que me ajudariam a refinar a ideia.
+
+Vamos repetir esse ciclo quantas vezes for preciso. Quando eu disser que está claro, me ajude a fechar tudo em uma frase final que eu possa validar. Não invente nada que eu não tenha falado.</p>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Seção: Testando com vocês -->
+        <section>
+            <h2 class="font-fraunces text-3xl text-tinta mb-10 flex items-center gap-4">
+                Testando com vocês
+                <span class="block w-12 h-px bg-fio"></span>
+            </h2>
+            
+            <div class="border-2 border-dashed border-fio rounded-[2rem] p-12 md:p-20 text-center flex flex-col items-center justify-center bg-bone/50 relative overflow-hidden">
+                <!-- Ícone sutil no fundo para não deixar tão vazio -->
+                <div class="absolute -right-8 -bottom-8 text-fio opacity-20">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" fill="currentColor" viewBox="0 0 256 256"><path d="M208,32H48A16,16,0,0,0,32,48V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V48A16,16,0,0,0,208,32ZM168,152a8,8,0,0,1-8,8H96a8,8,0,0,1,0-16h64A8,8,0,0,1,168,152Zm0-32a8,8,0,0,1-8,8H96a8,8,0,0,1,0-16h64A8,8,0,0,1,168,120Z"></path></svg>
+                </div>
+
+                <span class="inline-block bg-bloco text-pedra font-jetbrains text-xs font-bold px-3 py-1.5 rounded-md uppercase tracking-wide mb-6 relative z-10">
+                    Espaço Reservado
+                </span>
+                
+                <h3 class="font-fraunces text-2xl text-tinta mb-4 relative z-10">
+                    Esta parte está vazia de propósito.
+                </h3>
+                
+                <p class="text-pedra max-w-md mx-auto leading-relaxed relative z-10">
+                    Ela vai crescer conforme vocês me contarem os problemas reais do dia a dia e nós formos testando soluções que realmente funcionam para a comunidade.
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="max-w-5xl mx-auto w-full px-6 pb-12 mt-auto">
+        <div class="border-t border-fio pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-pedra text-sm">
+            <div class="flex items-center gap-2">
+                <span class="font-jetbrains font-bold text-tinta">lb.</span>
+                <span>&copy; Programa de Embaixadores Estudantis</span>
+            </div>
+            <p class="font-jetbrains text-xs">
+                Página atualizada conforme testamos coisas novas.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
